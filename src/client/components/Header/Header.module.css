@@ -1,8 +1,8 @@
 .header {
-  @apply bg-white text-primary py-2 sm:py-4 mb-2;
+  @apply bg-white text-primary py-4 md:py-6 mb-2;
 }
 .center {
-  @apply container mx-auto px-4;
+  @apply container mx-auto;
 }
 .content {
   @apply flex justify-between items-center;

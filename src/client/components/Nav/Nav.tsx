@@ -15,6 +15,16 @@ function Nav({ items, hasNotifications, isOpen, onClose }: NavProps) {
         })}
         onClick={onClose}
       />
+      <button
+        type="button"
+        onClick={onClose}
+        className={classNames(styles.close, { hidden: !isOpen })}
+      >
+        <span className="sr-only">Cerrar Menú</span>
+        <span className={styles.closeIcon} aria-hidden="true">
+          &times;
+        </span>
+      </button>
       <div
         className={classNames('transform', styles.nav, {
           [styles.navOpen]: isOpen,

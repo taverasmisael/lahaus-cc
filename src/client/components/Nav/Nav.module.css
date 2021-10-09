@@ -19,6 +19,10 @@
   @apply opacity-50 pointer-events-auto;
 }
 
+.close {
+  @apply fixed top-2 right-4 rounded-full w-8 h-8 bg-gray-100 text-primary;
+}
+
 .logo {
   @apply inline-block mb-4 w-full h-auto;
 }
@@ -54,6 +58,10 @@
 
   .nav {
     @apply shadow-none relative top-auto left-auto z-0 w-auto flex items-center p-0 transform-none;
+  }
+
+  .close {
+    @apply hidden;
   }
 
   .logo {
