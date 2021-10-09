@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -12,18 +13,19 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@/layouts/*": ["src/layouts/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/shared/*": ["src/shared/*"],
+      "@/styles/*": ["src/client/styles/*"],
+      "@/utils/*": ["src/shared/utils/*"],
+      "@/server/*": ["src/server/*"],
+      "@/client/*": ["src/client/*"],
+      "@/components/*": ["src/client/components/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
-  "paths": {
-    "@/layouts/*": ["src/layouts/*"],
-    "@/pages/*": ["src/pages/*"],
-    "@/shared/*": ["src/shared/*"],
-    "@/styles/*": ["src/client/styles/*"],
-    "@/utils/*": ["src/shared/utils/*"],
-    "@/server/*": ["src/server/*"],
-    "@/client/*": ["src/client/*"],
-    "@/components/*": ["src/client/components/*"]
-  }
+  "exclude": ["node_modules"]
 }

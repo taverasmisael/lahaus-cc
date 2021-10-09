@@ -6,5 +6,12 @@ module.exports = {
     './src/layouts/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: 'media',
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        primary: '#012D26',
+        accent: '#3ECFAF',
+      },
+    },
+  },
 }

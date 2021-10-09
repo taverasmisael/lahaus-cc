@@ -1,0 +1,21 @@
+.header {
+  @apply bg-white text-primary py-2 sm:py-4 mb-2;
+}
+.center {
+  @apply container mx-auto px-4;
+}
+.content {
+  @apply flex justify-between items-center;
+}
+
+.menuIconContainer {
+  @apply relative inline-block md:hidden;
+}
+
+.menuIcon {
+  @apply h-8;
+}
+
+.logo {
+  @apply h-8 ml-4 w-auto fill-current text-green-400;
+}
