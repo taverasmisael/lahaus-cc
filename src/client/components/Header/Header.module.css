@@ -2,7 +2,7 @@
   @apply bg-white text-primary py-4 md:py-6 mb-2;
 }
 .center {
-  @apply container mx-auto;
+  @apply container mx-auto px-4 md:px-0;
 }
 .content {
   @apply flex justify-between items-center;
