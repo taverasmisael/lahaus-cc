@@ -10,6 +10,7 @@ module.exports = {
     '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js',
     // Custom absolute imports
     '^@/components/(.*)$': '<rootDir>/src/client/components/$1',
+    '^@/containers/(.*)$': '<rootDir>/src/client/containers/$1',
     '^@/layouts/(.*)$': '<rootDir>/src/layouts/$1',
     '^@/pages/(.*)$': '<rootDir>/src/pages/$1',
     '^@/assets/(.*)$': '<rootDir>/src/assets/$1',
