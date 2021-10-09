@@ -18,9 +18,9 @@ function Nav({ items, hasNotifications, isOpen, onClose }: NavProps) {
       <button
         type="button"
         onClick={onClose}
+        aria-label="Cerrar Menú"
         className={classNames(styles.close, { hidden: !isOpen })}
       >
-        <span className="sr-only">Cerrar Menú</span>
         <span className={styles.closeIcon} aria-hidden="true">
           &times;
         </span>
@@ -40,6 +40,7 @@ function Nav({ items, hasNotifications, isOpen, onClose }: NavProps) {
           ))}
         </nav>
         <button
+          data-testid="profile-button"
           type="button"
           className={classNames(styles.menuItem, styles.profileItem)}
           onClick={() => alert(`I'm not implementing this 😃`)}

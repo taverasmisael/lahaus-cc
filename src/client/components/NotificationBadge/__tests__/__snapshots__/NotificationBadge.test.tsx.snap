@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/NotificationBadge it applies className correctly 1`] = `
+<div>
+  <span
+    class="rounded-full w-3 h-3 absolute top-0 right-0 bg-accent bg-red-300"
+    data-testid="notification-badge"
+  />
+</div>
+`;
+
+exports[`components/NotificationBadge it renders correctly 1`] = `
+<div>
+  <span
+    class="rounded-full w-3 h-3 absolute top-0 right-0 bg-accent"
+    data-testid="notification-badge"
+  />
+</div>
+`;

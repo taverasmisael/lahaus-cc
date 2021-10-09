@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Nav it can render a list of items 1`] = `
+<div
+  class="backdrop"
+/>
+`;
+
+exports[`components/Nav it can render a notification badge 1`] = `
+<div
+  class="backdrop"
+/>
+`;
+
+exports[`components/Nav it can render an empty list 1`] = `
+<div
+  class="backdrop"
+/>
+`;
