@@ -1,0 +1,14 @@
+.container {
+  @apply relative;
+}
+
+.empty {
+  @apply inline-block w-full h-auto;
+}
+
+.title {
+  @apply font-bold text-lg mb-2 mt-4;
+}
+.description {
+  @apply text-sm font-light;
+}
