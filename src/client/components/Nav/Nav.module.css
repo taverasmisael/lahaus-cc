@@ -1,0 +1,87 @@
+.backdrop {
+  @apply fixed top-0 left-0 w-full h-full bg-primary bg-opacity-25;
+  @apply transition-opacity duration-100 ease-in-out opacity-0 pointer-events-none;
+}
+
+.nav {
+  @apply fixed bg-white top-0 left-0 z-50 h-full shadow-xl p-4 grid gap-4;
+  @apply -translate-x-full transition-transform duration-300 ease-in-out;
+  /* Just to make sure it's not too wide */
+  width: clamp(200px, 50%, 370px);
+  grid-template-rows: 50px 1fr auto;
+}
+
+.navOpen {
+  @apply translate-x-0;
+}
+
+.backdropOpen {
+  @apply opacity-50 pointer-events-auto;
+}
+
+.logo {
+  @apply inline-block mb-4 w-full h-auto;
+}
+
+.menu {
+  @apply flex flex-col;
+}
+
+.menuItem {
+  @apply py-2 text-base font-light hover:text-green-400;
+}
+
+.menuItem + .menuItem {
+  @apply mt-2;
+}
+
+.profileItem {
+  @apply text-left flex items-center justify-between relative;
+}
+
+.dropdownIcon {
+  @apply -rotate-90;
+}
+
+.notificationBadge {
+  @apply -right-2 top-1;
+}
+
+@screen md {
+  .backdrop {
+    @apply hidden;
+  }
+
+  .nav {
+    @apply shadow-none relative top-auto left-auto z-0 w-auto flex items-center p-0 transform-none;
+  }
+
+  .logo {
+    @apply hidden;
+  }
+
+  .menu {
+    @apply block;
+  }
+
+  .menuItem {
+    @apply px-4;
+  }
+
+  .menuItem + .menuItem {
+    @apply ml-2;
+  }
+
+  .profileItem {
+    @apply font-semibold relative;
+  }
+
+  .dropdownIcon {
+    @apply ml-2 inline-block rotate-0;
+  }
+
+  /* Hackish way to get the badge in place */
+  .profileItem .notificationBadge {
+    @apply block top-1 right-1;
+  }
+}

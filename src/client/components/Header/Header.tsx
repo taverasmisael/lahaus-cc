@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import classNames from 'classnames'
 
+import Nav from '@/components/Nav'
 import NotificationBadge from '@/components/NotificationBadge'
 
 import MenuIcon from '../../assets/menu-icon.svg'
@@ -7,16 +9,38 @@ import LogoSmall from '../../assets/logo-small.svg'
 import LogoFull from '../../assets/logo-full.svg'
 import styles from './Header.module.css'
 
-// this has notification should probably come from a context/redux/etc...
+const MenuItems = [
+  {
+    name: 'Cundinamarca',
+    url: 'regions/cundinamarca',
+  },
+  {
+    name: 'Antioquia',
+    url: 'regions/antioquia',
+  },
+  {
+    name: 'Recursos',
+    url: 'Recursos',
+  },
+]
+
+// this `hasNotification` should probably come from a context/redux/etc...
 function Header({ hasNotifications }: HeaderProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <header className={styles.header}>
       <div className={styles.center}>
         <div className={styles.content}>
           <div className="flex items-center">
             <div className={styles.menuIconContainer}>
-              <MenuIcon title="Menu" className={styles.menuIcon} />
-              {hasNotifications ? <NotificationBadge /> : null}
+              <MenuIcon
+                title="Menu"
+                className={styles.menuIcon}
+                onClick={() => setIsMenuOpen(true)}
+              />
+              {hasNotifications ? (
+                <NotificationBadge className={styles.notificationBadge} />
+              ) : null}
             </div>
             <LogoFull
               title="La Haus logo"
@@ -27,7 +51,12 @@ function Header({ hasNotifications }: HeaderProps) {
               className={classNames(styles.logo, 'md:hidden')}
             />
           </div>
-          <div className="flex items-center"></div>
+          <Nav
+            items={MenuItems}
+            hasNotifications={hasNotifications}
+            isOpen={isMenuOpen}
+            onClose={() => setIsMenuOpen(false)}
+          />
         </div>
       </div>
     </header>

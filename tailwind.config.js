@@ -5,6 +5,7 @@ module.exports = {
     './src/client/components/**/*.{js,ts,jsx,tsx}',
     './src/layouts/**/*.{js,ts,jsx,tsx}',
   ],
+
   darkMode: 'media',
   theme: {
     extend: {
