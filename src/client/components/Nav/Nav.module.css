@@ -1,5 +1,5 @@
 .backdrop {
-  @apply fixed top-0 left-0 w-full h-full bg-primary bg-opacity-25;
+  @apply fixed top-0 left-0 w-full h-full bg-primary;
   @apply transition-opacity duration-100 ease-in-out opacity-0 pointer-events-none;
 }
 

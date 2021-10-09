@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
   purge: [
@@ -10,8 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#012D26',
-        accent: '#3ECFAF',
+        gray: colors.trueGray,
+        copy: '#5b6866',
+        primary: '#012d26',
+        accent: '#3ecfaf',
       },
     },
   },

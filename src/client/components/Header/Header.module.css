@@ -1,5 +1,6 @@
 .header {
-  @apply bg-white text-primary py-4 md:py-6 mb-2;
+  @apply bg-white text-primary py-4 md:py-6 shadow-sm mb-8 md:mb-16;
+  --tw-shadow: 0 1px 2px 0 #e5f0ee;
 }
 .center {
   @apply container mx-auto px-4 md:px-0;
