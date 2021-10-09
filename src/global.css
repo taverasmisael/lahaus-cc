@@ -1,0 +1,4 @@
+/* Default all the things */
+@tailwind base;
+@tailwind utilities;
+@tailwind components;

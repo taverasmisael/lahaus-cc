@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "paths": {
+    "@/layouts/*": ["src/layouts/*"],
+    "@/pages/*": ["src/pages/*"],
+    "@/shared/*": ["src/shared/*"],
+    "@/styles/*": ["src/client/styles/*"],
+    "@/utils/*": ["src/shared/utils/*"],
+    "@/server/*": ["src/server/*"],
+    "@/client/*": ["src/client/*"],
+    "@/components/*": ["src/client/components/*"]
+  }
+}
