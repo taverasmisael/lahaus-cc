@@ -6,13 +6,10 @@ export const normalizeResponse = (res: ResponseBookmarks): Bookmark[] => {
   const { data, included } = res
 
   const bookmarks = data.map((bm) => {
-    const realEstates = bm.attributes.real_estate_ids.map((id) => {
-      // I'm 100% sure that the RealEstates exist in the included array
-      return (
-        included.find((state) => state.id === id.toString()) ||
-        ({} as RealEstate)
-      )
-    })
+    const realEstates = bm.attributes.real_estate_ids.reduce((prev, id) => {
+      const realEstate = included.find((state) => state.id === id.toString())
+      return realEstate ? [...prev, realEstate] : prev
+    }, [] as RealEstate[])
 
     return {
       id: bm.id,

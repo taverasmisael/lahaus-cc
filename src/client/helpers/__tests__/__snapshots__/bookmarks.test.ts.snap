@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helpers/bookmarks normalizeResponse can normalize an API response 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "name": "TEST",
+    "realEstates": Array [
+      Object {
+        "attributes": Object {
+          "name": "TEST",
+        },
+        "id": "3",
+      },
+    ],
+  },
+]
+`;
+
+exports[`helpers/bookmarks normalizeResponse can normalize an API response even with no real estate matches 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "name": "TEST",
+    "realEstates": Array [],
+  },
+]
+`;
+
+exports[`helpers/bookmarks normalizeResponse ignore not found real estates ids 1`] = `
+Array [
+  Object {
+    "id": "1",
+    "name": "TEST",
+    "realEstates": Array [],
+  },
+]
+`;
