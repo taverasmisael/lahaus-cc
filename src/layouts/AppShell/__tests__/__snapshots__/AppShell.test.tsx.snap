@@ -106,19 +106,19 @@ exports[`layouts/AppShell it renders with children 1`] = `
           >
             <a
               class="menuItem"
-              href="/regions/cundinamarca"
+              href="/#"
             >
               Cundinamarca
             </a>
             <a
               class="menuItem"
-              href="/regions/antioquia"
+              href="/#"
             >
               Antioquia
             </a>
             <a
               class="menuItem"
-              href="/Recursos"
+              href="/#"
             >
               Recursos
             </a>
@@ -264,19 +264,19 @@ exports[`layouts/AppShell it renders without any extra props 1`] = `
           >
             <a
               class="menuItem"
-              href="/regions/cundinamarca"
+              href="/#"
             >
               Cundinamarca
             </a>
             <a
               class="menuItem"
-              href="/regions/antioquia"
+              href="/#"
             >
               Antioquia
             </a>
             <a
               class="menuItem"
-              href="/Recursos"
+              href="/#"
             >
               Recursos
             </a>

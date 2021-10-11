@@ -102,19 +102,19 @@ exports[`components/Header it renders correctly 1`] = `
           >
             <a
               class="menuItem"
-              href="/regions/cundinamarca"
+              href="/#"
             >
               Cundinamarca
             </a>
             <a
               class="menuItem"
-              href="/regions/antioquia"
+              href="/#"
             >
               Antioquia
             </a>
             <a
               class="menuItem"
-              href="/Recursos"
+              href="/#"
             >
               Recursos
             </a>
@@ -253,19 +253,19 @@ exports[`components/Header it renders correctly with notifications 1`] = `
           >
             <a
               class="menuItem"
-              href="/regions/cundinamarca"
+              href="/#"
             >
               Cundinamarca
             </a>
             <a
               class="menuItem"
-              href="/regions/antioquia"
+              href="/#"
             >
               Antioquia
             </a>
             <a
               class="menuItem"
-              href="/Recursos"
+              href="/#"
             >
               Recursos
             </a>
