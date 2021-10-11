@@ -33,7 +33,7 @@ function BookmarkRealEstateCarousel({
             className="w-full h-full object-cover"
           />
           {idx === 2 && showOverlay && (
-            <div className={styles.overlay}>
+            <div data-testid="overlay" className={styles.overlay}>
               <div className={styles.overlayText}>
                 +{items.length - MAX_IMAGES}
               </div>

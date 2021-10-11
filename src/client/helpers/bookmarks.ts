@@ -1,6 +1,6 @@
 import { Bookmark } from '@/shared/bookmark.interface'
 import { RealEstate } from '@/shared/real-state.interface'
-import { ResponseBookmarks } from '@/shared/response.bookmarks'
+import { ResponseBookmarks } from '@/shared/response-bookmarks.interface'
 
 export const normalizeResponse = (res: ResponseBookmarks): Bookmark[] => {
   const { data, included } = res

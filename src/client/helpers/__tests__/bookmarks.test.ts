@@ -1,5 +1,5 @@
 import { RealEstateAttributes } from '@/shared/real-state.interface'
-import { ResponseBookmarks } from '@/shared/response.bookmarks'
+import { ResponseBookmarks } from '@/shared/response-bookmarks.interface'
 import { normalizeResponse } from '../bookmarks'
 
 describe('helpers/bookmarks', () => {

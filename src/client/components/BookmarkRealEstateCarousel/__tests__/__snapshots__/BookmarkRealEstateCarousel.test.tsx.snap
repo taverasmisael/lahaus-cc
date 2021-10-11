@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/BookmarkRealEstateCarousel renders N without crashing 1`] = `
+<div
+  class="carousel"
+>
+  <div
+    class="image image0"
+  >
+    <img
+      alt="Real name 18"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/18"
+    />
+  </div>
+  <div
+    class="image image1"
+  >
+    <img
+      alt="Real name 18"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/18"
+    />
+  </div>
+  <div
+    class="image image2"
+  >
+    <img
+      alt="Real name 18"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/18"
+    />
+    <div
+      class="overlay"
+      data-testid="overlay"
+    >
+      <div
+        class="overlayText"
+      >
+        +
+        15
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/BookmarkRealEstateCarousel renders double without crashing 1`] = `
+<div
+  class="carousel twoChildren"
+>
+  <div
+    class="image image0"
+  >
+    <img
+      alt="Real name 2"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/2"
+    />
+  </div>
+  <div
+    class="image image1"
+  >
+    <img
+      alt="Real name 2"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/2"
+    />
+  </div>
+</div>
+`;
+
+exports[`components/BookmarkRealEstateCarousel renders empty without crashing 1`] = `
+<div
+  class="carousel singleChild"
+>
+  <div
+    class="image image0"
+  >
+    <img
+      class="w-full h-full object-cover"
+      src="/imgs/empty-state.png"
+    />
+  </div>
+</div>
+`;
+
+exports[`components/BookmarkRealEstateCarousel renders single without crashing 1`] = `
+<div
+  class="carousel singleChild"
+>
+  <div
+    class="image image0"
+  >
+    <img
+      alt="Real name 1"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/1"
+    />
+  </div>
+</div>
+`;
+
+exports[`components/BookmarkRealEstateCarousel renders triple without crashing 1`] = `
+<div
+  class="carousel"
+>
+  <div
+    class="image image0"
+  >
+    <img
+      alt="Real name 3"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/3"
+    />
+  </div>
+  <div
+    class="image image1"
+  >
+    <img
+      alt="Real name 3"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/3"
+    />
+  </div>
+  <div
+    class="image image2"
+  >
+    <img
+      alt="Real name 3"
+      class="w-full h-full object-cover"
+      src="https://unsplash.it/3"
+    />
+  </div>
+</div>
+`;

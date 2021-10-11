@@ -32,16 +32,17 @@ function Header({ hasNotifications }: HeaderProps) {
       <div className={styles.center}>
         <div className={styles.content}>
           <div className="flex items-center">
-            <div className={styles.menuIconContainer}>
-              <MenuIcon
-                title="Menu"
-                className={styles.menuIcon}
-                onClick={() => setIsMenuOpen(true)}
-              />
+            <button
+              aria-label="Abrir menú"
+              type="button"
+              onClick={() => setIsMenuOpen(true)}
+              className={styles.menuIconContainer}
+            >
+              <MenuIcon className={styles.menuIcon} />
               {hasNotifications ? (
                 <NotificationBadge className={styles.notificationBadge} />
               ) : null}
-            </div>
+            </button>
             <LogoFull
               title="La Haus logo"
               className={classNames(styles.logo, 'hidden md:inline-block')}

@@ -1,5 +1,5 @@
 .backdrop {
-  @apply fixed top-0 left-0 w-full h-full bg-primary;
+  @apply fixed top-0 left-0 w-full h-full bg-primary z-40;
   @apply transition-opacity duration-100 ease-in-out opacity-0 pointer-events-none;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .close {
-  @apply fixed top-2 right-4 rounded-full w-8 h-8 bg-gray-100 text-primary;
+  @apply fixed top-2 right-4 rounded-full w-8 h-8 bg-gray-100 text-primary z-50;
 }
 
 .logo {

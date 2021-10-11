@@ -4,7 +4,7 @@ import { rest } from 'msw'
 import { setupServer } from 'msw/node'
 
 import { RealEstateAttributes } from '@/shared/real-state.interface'
-import { ResponseBookmarks } from '@/shared/response.bookmarks'
+import { ResponseBookmarks } from '@/shared/response-bookmarks.interface'
 
 export const DEFAULT_RESPONSE: ResponseBookmarks = {
   data: [{ attributes: { name: 'TEST', real_estate_ids: [3] }, id: '1' }],

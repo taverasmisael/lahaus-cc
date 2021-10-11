@@ -1,126 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BookmarkCard renders correctly 1`] = `
-<div>
-  <div
-    class="container"
+exports[`components/BookmarkCard renders correctly 1`] = `
+<div
+  class="container"
+>
+  <header
+    class="header"
   >
-    <header
-      class="header"
+    <div
+      class="carousel singleChild"
     >
       <div
-        class="carousel singleChild"
+        class="image image0"
       >
-        <div
-          class="image image0"
-        >
-          <img
-            class="w-full h-full object-cover"
-            src="/imgs/empty-state.png"
-          />
-        </div>
+        <img
+          class="w-full h-full object-cover"
+          src="/imgs/empty-state.png"
+        />
       </div>
-    </header>
-    <h2
-      class="title"
+    </div>
+  </header>
+  <h2
+    class="title"
+  >
+    <a
+      href="/bookmarks/3"
     >
-      <a
-        href="/bookmarks/3"
-      >
-        My empty bookmark
-      </a>
-    </h2>
-    <p
-      class="description"
-    >
-      0 propiedades guardadas
-    </p>
-  </div>
+      My empty bookmark
+    </a>
+  </h2>
+  <p
+    class="description"
+  >
+    0 propiedades guardadas
+  </p>
 </div>
 `;
 
-exports[`BookmarkCard renders correctly multi items 1`] = `
-<div>
-  <div
-    class="container"
+exports[`components/BookmarkCard renders correctly multi items 1`] = `
+<div
+  class="container"
+>
+  <header
+    class="header"
   >
-    <header
-      class="header"
+    <div
+      class="carousel twoChildren"
     >
       <div
-        class="carousel twoChildren"
+        class="image image0"
       >
-        <div
-          class="image image0"
-        >
-          <img
-            class="w-full h-full object-cover"
-            src="https://unsplash.it/1"
-          />
-        </div>
-        <div
-          class="image image1"
-        >
-          <img
-            class="w-full h-full object-cover"
-            src="https://unsplash.it/2"
-          />
-        </div>
+        <img
+          class="w-full h-full object-cover"
+          src="https://unsplash.it/1"
+        />
       </div>
-    </header>
-    <h2
-      class="title"
-    >
-      <a
-        href="/bookmarks/3"
+      <div
+        class="image image1"
       >
-        My bookmarks
-      </a>
-    </h2>
-    <p
-      class="description"
+        <img
+          class="w-full h-full object-cover"
+          src="https://unsplash.it/2"
+        />
+      </div>
+    </div>
+  </header>
+  <h2
+    class="title"
+  >
+    <a
+      href="/bookmarks/3"
     >
-      2 propiedades guardadas
-    </p>
-  </div>
+      My bookmarks
+    </a>
+  </h2>
+  <p
+    class="description"
+  >
+    2 propiedades guardadas
+  </p>
 </div>
 `;
 
-exports[`BookmarkCard renders correctly one item 1`] = `
-<div>
-  <div
-    class="container"
+exports[`components/BookmarkCard renders correctly one item 1`] = `
+<div
+  class="container"
+>
+  <header
+    class="header"
   >
-    <header
-      class="header"
+    <div
+      class="carousel singleChild"
     >
       <div
-        class="carousel singleChild"
+        class="image image0"
       >
-        <div
-          class="image image0"
-        >
-          <img
-            class="w-full h-full object-cover"
-            src="https://unsplash.it/1"
-          />
-        </div>
+        <img
+          class="w-full h-full object-cover"
+          src="https://unsplash.it/1"
+        />
       </div>
-    </header>
-    <h2
-      class="title"
+    </div>
+  </header>
+  <h2
+    class="title"
+  >
+    <a
+      href="/bookmarks/3"
     >
-      <a
-        href="/bookmarks/3"
-      >
-        My bookmarks
-      </a>
-    </h2>
-    <p
-      class="description"
-    >
-      1 propiedad guardada
-    </p>
-  </div>
+      My bookmarks
+    </a>
+  </h2>
+  <p
+    class="description"
+  >
+    1 propiedad guardada
+  </p>
 </div>
 `;

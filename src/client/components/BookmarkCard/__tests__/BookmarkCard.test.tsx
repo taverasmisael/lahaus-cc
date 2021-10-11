@@ -18,23 +18,23 @@ const DEFAULT_ITEMS = [
   },
 ] as RealEstate[]
 
-describe('BookmarkCard', () => {
+describe('components/BookmarkCard', () => {
   it('renders correctly', () => {
     const { container } = render(
       <BookmarkCard id="3" items={[]} name="My empty bookmark" />
     )
-    expect(container).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
   it('renders correctly one item', () => {
     const { container } = render(
       <BookmarkCard id="3" items={[DEFAULT_ITEMS[0]]} name="My bookmarks" />
     )
-    expect(container).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
   it('renders correctly multi items', () => {
     const { container } = render(
       <BookmarkCard id="3" items={DEFAULT_ITEMS} name="My bookmarks" />
     )
-    expect(container).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

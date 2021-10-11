@@ -40,28 +40,6 @@
   left: calc(40% + var(--width));
 }
 
-/* 
-.image1 {
-  @apply z-10;
-  left: 40%;
-  width: 123px;
-}
-
-.image2 {
-  left: 63%;
-  width: 130px;
-}
-
-@screen md {
-  .image1 {
-    left: 35%;
-  }
-
-  .image2 {
-    left: 60%;
-  }
-} */
-
 /* Special styles for the carousel */
 /*
 * I could have a bit of JS here to make the images sizes and positions a bit more dynamic,

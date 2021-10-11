@@ -1,7 +1,10 @@
 module.exports = {
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    '**/*.{ts,tsx}',
     '!**/*.d.ts',
+    '!**/pages/**/*.tsx',
+    '!**/**/index.ts',
+    '!**/**/*.interface.ts',
     '!**/node_modules/**',
   ],
   moduleNameMapper: {

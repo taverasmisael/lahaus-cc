@@ -1,5 +1,5 @@
 import { useSWR } from './useSWR'
-import { ResponseBookmarks } from '@/shared/response.bookmarks'
+import { ResponseBookmarks } from '@/shared/response-bookmarks.interface'
 import { normalizeResponse } from '@/client/helpers/bookmarks'
 
 export function useBookmarks(normalize?: boolean) {
