@@ -5,20 +5,24 @@ import styles from './BookmarksContainer.module.css'
 
 function BookmarksContainer() {
   const state = useBookmarks(true)
-  return state.isLoading ? (
-    <div>Loading...</div>
-  ) : (
-    <ul className={styles.container}>
+  state.isLoading //?
+
+  if (state.isLoading) {
+    return <div>Loading...</div>
+  }
+
+  return (
+    <div data-testid="list" className={styles.container}>
       {(state.bookmarks as Bookmark[]).map((bookmark) => (
-        <li className={styles.item} key={bookmark.id}>
+        <div data-testid="card" className={styles.item} key={bookmark.id}>
           <BookmarkCard
             items={bookmark.realEstates}
             id={bookmark.id}
             name={bookmark.name}
           />
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   )
 }
 
