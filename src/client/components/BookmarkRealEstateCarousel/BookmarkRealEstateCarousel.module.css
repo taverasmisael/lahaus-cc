@@ -1,0 +1,45 @@
+.carousel {
+  @apply w-full relative overflow-hidden rounded-lg;
+  height: 196px;
+}
+
+.image {
+  @apply object-cover rounded-lg h-full w-full absolute left-0 top-0 overflow-hidden;
+  border: 1px solid transparent;
+  max-width: 150px;
+}
+
+.image0,
+.image1 {
+  @apply border-white;
+}
+
+.image0 {
+  @apply z-20;
+}
+
+.image1 {
+  @apply z-10;
+  left: 75px;
+}
+
+.image2 {
+  left: 150px;
+}
+
+/* Special styles for the carousel */
+
+.carousel.singleChild .image {
+  @apply max-w-full w-full;
+}
+.carousel.twoChildren .image {
+  @apply w-1/2;
+  max-width: 50%;
+}
+.carousel.twoChildren .image.image0 {
+  @apply w-7/12;
+  max-width: 60%;
+}
+.carousel.twoChildren .image.image1 {
+  @apply left-1/2;
+}
