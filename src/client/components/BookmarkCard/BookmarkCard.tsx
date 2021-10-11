@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from './BookmarkCard.module.css'
-import emptyStateImg from '../../assets/empty-state.png'
 import { RealEstate } from '@/shared/real-state.interface'
 import BookmarkRealEstateCarousel from '@/components/BookmarkRealEstateCarousel'
 
@@ -10,16 +9,7 @@ function BookmarkCard({ items, name, id }: BookmarkCardProps) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        {!items.length ? (
-          <Image
-            src={emptyStateImg}
-            alt=""
-            layout="responsive"
-            className={styles.empty}
-          />
-        ) : (
-          <BookmarkRealEstateCarousel items={items} />
-        )}
+        <BookmarkRealEstateCarousel items={items} />
       </header>
       <h2 className={styles.title}>
         <Link href={`bookmarks/${id}`}>

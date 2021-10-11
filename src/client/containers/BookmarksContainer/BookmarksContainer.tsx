@@ -5,7 +5,6 @@ import styles from './BookmarksContainer.module.css'
 
 function BookmarksContainer() {
   const state = useBookmarks(true)
-  state.isLoading //?
 
   if (state.isLoading) {
     return <div>Loading...</div>
@@ -22,6 +21,9 @@ function BookmarksContainer() {
           />
         </div>
       ))}
+      <div data-testid="card" className={styles.item}>
+        <BookmarkCard items={[]} id="" name="Empty list" />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`containers/BookmarksContainer renders the list of BookmarkCards 1`] = `
+<div
+  class="container"
+  data-testid="list"
+>
+  <div
+    class="item"
+    data-testid="card"
+  >
+    <div
+      class="container"
+    >
+      <header
+        class="header"
+      >
+        <div
+          class="carousel singleChild"
+        >
+          <div
+            class="image image0"
+          >
+            <img
+              alt="TEST"
+              class="w-full h-full object-cover"
+              src="https://unsplas.it/160/190"
+            />
+          </div>
+        </div>
+      </header>
+      <h2
+        class="title"
+      >
+        <a
+          href="/bookmarks/1"
+        >
+          TEST
+        </a>
+      </h2>
+      <p
+        class="description"
+      >
+        1 propiedad guardada
+      </p>
+    </div>
+  </div>
+  <div
+    class="item"
+    data-testid="card"
+  >
+    <div
+      class="container"
+    >
+      <header
+        class="header"
+      >
+        <div
+          class="carousel singleChild"
+        >
+          <div
+            class="image image0"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="/imgs/empty-state.png"
+            />
+          </div>
+        </div>
+      </header>
+      <h2
+        class="title"
+      >
+        <a
+          href="/bookmarks"
+        >
+          Empty list
+        </a>
+      </h2>
+      <p
+        class="description"
+      >
+        0 propiedades guardadas
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`containers/BookmarksContainer renders without crashing 1`] = `
+<div>
+  Loading...
+</div>
+`;

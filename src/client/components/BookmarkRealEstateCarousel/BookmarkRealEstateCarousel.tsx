@@ -7,6 +7,7 @@ import { RealEstate } from '@/shared/real-state.interface'
 import styles from './BookmarkRealEstateCarousel.module.css'
 
 const MAX_IMAGES = 3
+const EMPTY_STATE_URL = '/imgs/empty-state.png'
 
 function BookmarkRealEstateCarousel({
   items,
@@ -28,7 +29,7 @@ function BookmarkRealEstateCarousel({
         >
           <img
             src={image}
-            alt={items[idx].attributes.name}
+            alt={items[idx]?.attributes?.name}
             className="w-full h-full object-cover"
           />
           {idx === 2 && showOverlay && (
@@ -51,8 +52,10 @@ interface BookmarkRealEstateCarouselProps {
 export default BookmarkRealEstateCarousel
 
 function getCarouselImages(items: RealEstate[]) {
-  return items.slice(0, MAX_IMAGES).reduce((prev, item) => {
+  const images = items.slice(0, MAX_IMAGES).reduce((prev, item) => {
     const firstImage = item.attributes.gallery_urls[0]
     return firstImage ? [...prev, firstImage] : prev
   }, [] as string[])
+
+  return images.length ? images : [EMPTY_STATE_URL]
 }

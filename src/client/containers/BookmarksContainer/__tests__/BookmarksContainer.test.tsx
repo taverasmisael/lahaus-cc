@@ -17,7 +17,7 @@ describe('containers/BookmarksContainer', () => {
 
     await waitForElementToBeRemoved(() => getByText(/loading/gi))
     expect(getByTestId('list')).toBeInTheDocument()
-    expect(getAllByTestId('card')).toHaveLength(1)
+    expect(getAllByTestId('card')).toHaveLength(2)
 
     expect(container.firstChild).toMatchSnapshot()
   })
