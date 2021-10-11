@@ -8,7 +8,15 @@ import { ResponseBookmarks } from '@/shared/response.bookmarks'
 
 export const DEFAULT_RESPONSE: ResponseBookmarks = {
   data: [{ attributes: { name: 'TEST', real_estate_ids: [3] }, id: '1' }],
-  included: [{ id: '3', attributes: { name: 'TEST' } as RealEstateAttributes }],
+  included: [
+    {
+      id: '3',
+      attributes: {
+        name: 'TEST',
+        gallery_urls: ['https://unsplas.it/160/190'],
+      } as RealEstateAttributes,
+    },
+  ],
 }
 
 export const server = setupServer(

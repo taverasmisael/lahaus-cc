@@ -2,6 +2,7 @@ import { renderHook, act } from '@testing-library/react-hooks'
 
 import { useBookmarks } from '../useBookmarks'
 import { normalizeResponse } from '@/client/helpers/bookmarks'
+import { sleep } from '@/client/helpers/utils'
 
 import {
   initializeMockServer,
@@ -11,10 +12,6 @@ import {
 initializeMockServer()
 
 describe('useBookmarks', () => {
-  // sleep
-  const sleep = (ms: number) =>
-    new Promise<void>((resolve) => setTimeout(resolve, ms))
-
   test('can return raw data', async () => {
     const { result } = renderHook(() => useBookmarks())
     await act(() => sleep(60))
