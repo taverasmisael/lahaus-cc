@@ -7,13 +7,14 @@
   @apply w-full h-full absolute top-0 right-0 flex items-center justify-center bg-primary bg-opacity-70;
 }
 .overlayText {
-  @apply text-white text-center text-xl font-bold ml-8;
+  @apply text-white text-center text-xl font-bold flex-1;
+  margin-left: calc(var(--width) / 2);
 }
 
 .image {
   @apply object-cover rounded-lg h-full w-full absolute left-0 top-0 overflow-hidden;
   border: 1px solid transparent;
-  max-width: 150px;
+  max-width: 50%;
 }
 
 .image0,
@@ -21,10 +22,25 @@
   @apply border-white;
 }
 
+.image1,
+.image2 {
+  --width: calc(calc(60% - 2px) / 2);
+  width: var(--width, 33%);
+}
+
 .image0 {
   @apply z-20;
 }
 
+.image1 {
+  @apply z-10;
+  left: 45%;
+}
+.image2 {
+  left: calc(40% + var(--width));
+}
+
+/* 
 .image1 {
   @apply z-10;
   left: 40%;
@@ -44,7 +60,7 @@
   .image2 {
     left: 60%;
   }
-}
+} */
 
 /* Special styles for the carousel */
 /*
