@@ -1,7 +1,7 @@
-export interface Bokmark {
+import { RealEstate } from './real-state.interface'
+
+export interface Bookmark {
   id: string
-  attributes: {
-    name: string
-    real_state_ids: number[]
-  }
+  name: string
+  realEstates: RealEstate[]
 }

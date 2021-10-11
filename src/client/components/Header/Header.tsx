@@ -12,15 +12,15 @@ import styles from './Header.module.css'
 const MenuItems = [
   {
     name: 'Cundinamarca',
-    url: 'regions/cundinamarca',
+    url: '#',
   },
   {
     name: 'Antioquia',
-    url: 'regions/antioquia',
+    url: '#',
   },
   {
     name: 'Recursos',
-    url: 'Recursos',
+    url: '#',
   },
 ]
 

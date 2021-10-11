@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Bokmark } from '@/shared/bookmark.interface'
 import styles from './BookmarkCard.module.css'
 import emptyStateImg from '../../assets/empty-state.png'
+import { RealEstate } from '@/shared/real-state.interface'
 
 function BookmarkCard({ items, name, id }: BookmarkCardProps) {
+  console.log(items)
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -21,7 +22,7 @@ function BookmarkCard({ items, name, id }: BookmarkCardProps) {
         )}
       </header>
       <h2 className={styles.title}>
-        <Link href={`bookmark/${id}`}>
+        <Link href={`bookmarks/${id}`}>
           <a>{name}</a>
         </Link>
       </h2>
@@ -31,7 +32,7 @@ function BookmarkCard({ items, name, id }: BookmarkCardProps) {
 }
 
 interface BookmarkCardProps {
-  items: Bokmark[]
+  items: RealEstate[]
   name: string
   id: string
 }
