@@ -1,0 +1,15 @@
+.container {
+  @apply overflow-hidden grid items-center;
+}
+.header {
+  @apply bg-secondary bg-opacity-25 relative block text-white flex-1 w-full rounded-lg;
+
+  height: 196px;
+  max-height: 196px;
+}
+.icon {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+.copy {
+  @apply mb-2 mt-4 text-secondary font-semibold;
+}

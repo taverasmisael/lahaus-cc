@@ -1,6 +1,8 @@
-import BookmarkCard from '@/client/components/BookmarkCard'
+import BookmarkCard from '@/components/BookmarkCard'
+import AddBookmarkButton from '@/components/AddBookmarkButton'
 import { useBookmarks } from '@/client/hooks/useBookmarks'
 import { Bookmark } from '@/shared/bookmark.interface'
+
 import styles from './BookmarksContainer.module.css'
 
 function BookmarksContainer() {
@@ -12,6 +14,9 @@ function BookmarksContainer() {
 
   return (
     <div data-testid="list" className={styles.container}>
+      <div data-testid="card" className={styles.item}>
+        <BookmarkCard items={[]} id="" name="Empty list" />
+      </div>
       {(state.bookmarks as Bookmark[]).map((bookmark) => (
         <div data-testid="card" className={styles.item} key={bookmark.id}>
           <BookmarkCard
@@ -21,9 +26,7 @@ function BookmarksContainer() {
           />
         </div>
       ))}
-      <div data-testid="card" className={styles.item}>
-        <BookmarkCard items={[]} id="" name="Empty list" />
-      </div>
+      <AddBookmarkButton />
     </div>
   )
 }

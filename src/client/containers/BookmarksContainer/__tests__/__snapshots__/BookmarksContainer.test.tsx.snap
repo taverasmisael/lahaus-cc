@@ -22,6 +22,45 @@ exports[`containers/BookmarksContainer renders the list of BookmarkCards 1`] = `
             class="image image0"
           >
             <img
+              class="w-full h-full object-cover"
+              src="/imgs/empty-state.png"
+            />
+          </div>
+        </div>
+      </header>
+      <h2
+        class="title"
+      >
+        <a
+          href="/bookmarks"
+        >
+          Empty list
+        </a>
+      </h2>
+      <p
+        class="description"
+      >
+        0 propiedades guardadas
+      </p>
+    </div>
+  </div>
+  <div
+    class="item"
+    data-testid="card"
+  >
+    <div
+      class="container"
+    >
+      <header
+        class="header"
+      >
+        <div
+          class="carousel singleChild"
+        >
+          <div
+            class="image image0"
+          >
+            <img
               alt="TEST"
               class="w-full h-full object-cover"
               src="https://unsplas.it/160/190"
@@ -45,45 +84,32 @@ exports[`containers/BookmarksContainer renders the list of BookmarkCards 1`] = `
       </p>
     </div>
   </div>
-  <div
-    class="item"
-    data-testid="card"
+  <button
+    class="container"
+    type="button"
   >
-    <div
-      class="container"
+    <span
+      class="header"
     >
-      <header
-        class="header"
+      <svg
+        class="icon"
+        fill="none"
+        height="38"
+        width="38"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div
-          class="carousel singleChild"
-        >
-          <div
-            class="image image0"
-          >
-            <img
-              class="w-full h-full object-cover"
-              src="/imgs/empty-state.png"
-            />
-          </div>
-        </div>
-      </header>
-      <h2
-        class="title"
-      >
-        <a
-          href="/bookmarks"
-        >
-          Empty list
-        </a>
-      </h2>
-      <p
-        class="description"
-      >
-        0 propiedades guardadas
-      </p>
-    </div>
-  </div>
+        <path
+          d="M20.875 17.125V.25h-3.75v16.875H.25v3.75h16.875V37.75h3.75V20.875H37.75v-3.75H20.875Z"
+          fill="#3948FF"
+        />
+      </svg>
+    </span>
+    <span
+      class="copy"
+    >
+      Crear una nueva lista
+    </span>
+  </button>
 </div>
 `;
 

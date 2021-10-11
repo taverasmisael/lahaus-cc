@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/AddBookmarkButton renders correctly 1`] = `
+<button
+  class="container"
+  type="button"
+>
+  <span
+    class="header"
+  >
+    <svg
+      class="icon"
+      fill="none"
+      height="38"
+      width="38"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.875 17.125V.25h-3.75v16.875H.25v3.75h16.875V37.75h3.75V20.875H37.75v-3.75H20.875Z"
+        fill="#3948FF"
+      />
+    </svg>
+  </span>
+  <span
+    class="copy"
+  >
+    Crear una nueva lista
+  </span>
+</button>
+`;

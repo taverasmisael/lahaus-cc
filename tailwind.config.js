@@ -14,6 +14,7 @@ module.exports = {
         gray: colors.trueGray,
         copy: '#5b6866',
         primary: '#012d26',
+        secondary: '#3948FF',
         accent: '#3ecfaf',
       },
     },
