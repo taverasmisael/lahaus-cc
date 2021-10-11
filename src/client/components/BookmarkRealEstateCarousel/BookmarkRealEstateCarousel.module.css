@@ -7,7 +7,7 @@
   @apply w-full h-full absolute top-0 right-0 flex items-center justify-center bg-primary bg-opacity-70;
 }
 .overlayText {
-  @apply text-white text-center text-xl font-bold pl-16;
+  @apply text-white text-center text-xl font-bold ml-8;
 }
 
 .image {
@@ -27,11 +27,23 @@
 
 .image1 {
   @apply z-10;
-  left: 75px;
+  left: 40%;
+  width: 123px;
 }
 
 .image2 {
-  left: 150px;
+  left: 63%;
+  width: 130px;
+}
+
+@screen md {
+  .image1 {
+    left: 35%;
+  }
+
+  .image2 {
+    left: 60%;
+  }
 }
 
 /* Special styles for the carousel */
