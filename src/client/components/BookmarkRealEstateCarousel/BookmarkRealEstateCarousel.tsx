@@ -12,6 +12,8 @@ function BookmarkRealEstateCarousel({
   items,
 }: BookmarkRealEstateCarouselProps) {
   const images = useMemo(() => getCarouselImages(items), [items])
+  const showOverlay = useMemo(() => items.length > MAX_IMAGES, [items])
+
   return (
     <div
       className={classNames(styles.carousel, {
@@ -29,6 +31,13 @@ function BookmarkRealEstateCarousel({
             alt={items[idx].attributes.name}
             className="w-full h-full object-cover"
           />
+          {idx === 2 && showOverlay && (
+            <div className={styles.overlay}>
+              <div className={styles.overlayText}>
+                +{items.length - MAX_IMAGES}
+              </div>
+            </div>
+          )}
         </div>
       ))}
     </div>

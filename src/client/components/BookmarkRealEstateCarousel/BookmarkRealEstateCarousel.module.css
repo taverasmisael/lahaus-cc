@@ -1,6 +1,13 @@
 .carousel {
-  @apply w-full relative overflow-hidden rounded-lg;
+  @apply w-full relative overflow-hidden rounded-lg hover:opacity-90;
   height: 196px;
+}
+
+.overlay {
+  @apply w-full h-full absolute top-0 right-0 flex items-center justify-center bg-primary bg-opacity-70;
+}
+.overlayText {
+  @apply text-white text-center text-xl font-bold pl-16;
 }
 
 .image {
@@ -28,6 +35,10 @@
 }
 
 /* Special styles for the carousel */
+/*
+* I could have a bit of JS here to make the images sizes and positions a bit more dynamic,
+* but I think it's better to keep it simple.
+*/
 
 .carousel.singleChild .image {
   @apply max-w-full w-full;
