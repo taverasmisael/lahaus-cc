@@ -15,7 +15,9 @@ const BookmarkPage: NextPage<BookmarkPageProps> = ({ realEstates, name }) => {
         <header className="mb-14">
           <h1 className="text-center mb-4">{name}</h1>
           <Link href="/bookmarks">
-            <a className="text-center text-sm text-gray-400 block hover:text-copy">Volver a los marcadores</a>
+            <a className="text-center text-sm text-gray-400 block hover:text-copy">
+              Volver a los marcadores
+            </a>
           </Link>
         </header>
         {!realEstates.length && (
@@ -24,7 +26,10 @@ const BookmarkPage: NextPage<BookmarkPageProps> = ({ realEstates, name }) => {
 
         <div className="grid gap-4 md:grid-cols-3 2xl:grid-cols-4">
           {realEstates.map((re) => (
-            <div key={re.id} className="rounded-md grid overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div
+              key={re.id}
+              className="rounded-md grid overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
               <img
                 src={re.attributes.gallery_urls[0]}
                 alt={re.attributes.name}
@@ -54,6 +59,8 @@ const BookmarkPage: NextPage<BookmarkPageProps> = ({ realEstates, name }) => {
   )
 }
 
+// A lot of these logic would be saved with a full API instead of the mock with a single entry point.
+// We could also implement Static Generation, but that's a bit out of scope for this project.
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   try {
     const url = process.env.NEXT_PUBLIC_API_URL
